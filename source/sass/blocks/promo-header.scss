@@ -1,0 +1,165 @@
+.promo-header {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 601px;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 111px;
+  padding-bottom: 51px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -6px;
+    right: 18.8%;
+
+    width: 500px;
+    height: 556px;
+
+    background-image: url("../img/superman-big.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.promo-header__city {
+  padding-left: 306px;
+
+  font-family: "BebasNeue", cursive;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.promo-header__title {
+  width: 34.4%;
+  margin: 0;
+  margin-top: 13px;
+  padding-left: 98px;
+
+  font-family: "BebasNeue", cursive;
+  font-weight: bold;
+  font-size: 111px;
+  line-height: 109px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-align: right;
+}
+
+.promo-header__buy-item {
+  width: 235px;
+  padding: 19px 10px;
+  margin-left: 14%;
+
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: transparent;
+  border: 4px solid #FFFFFF;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.promo-header__list-social {
+  position: absolute;
+  bottom: 90px;
+  right: 29px;
+}
+
+@media (max-width: $tablet-width-max) {
+  .promo-header {
+    min-width: $mobile-width;
+    max-width: 760px;
+    min-height: 489.5px;
+    padding: 0 30px;
+    padding-top: 72px;
+    padding-bottom: 79px;
+
+    &::after {
+      top: 18px;
+      right: 5.2%;
+
+      width: 324px;
+      height: 390px;
+
+      background-image: url("../img/superman-medium.png");
+    }
+  }
+
+  .promo-header__city {
+    padding-left: 38.8%;
+
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .promo-header__title {
+    width: 48.4%;
+    margin: 6px 0 0;
+
+    font-size: 88px;
+    line-height: 86px;
+  }
+
+  .promo-header__buy-item {
+    width: 187px;
+    margin-left: 21.4%;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .promo-header {
+    min-width: $mobile-width;
+    max-width: 320px;
+    min-height: 449px;
+    padding: 0 13px;
+    padding-top: 72px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .promo-header__city {
+    padding-left: 81.8%;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .promo-header__title {
+    width: 294px;
+    margin: 0;
+    margin-top: 10px;
+    padding-left: 25.5%;
+
+    font-size: 80px;
+    line-height: 78px;
+  }
+
+  .promo-header__buy-item {
+    width: 187px;
+    margin-left: 21.4%;
+  }
+
+  .promo-header__buy-item {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px 10px;
+  }
+}

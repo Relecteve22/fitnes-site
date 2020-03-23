@@ -1,0 +1,32 @@
+.list-rooms {
+  width: 11.4%;
+  padding: 0;
+  margin: 0;
+  margin-top: -91px;
+  margin-bottom: 85px;
+
+  text-align: right;
+
+  list-style: none;
+}
+
+.list-rooms li {
+  color: #ffffff;
+}
+
+@media (max-width: $tablet-width-max) {
+  .list-rooms {
+    width: 17.7%;
+    margin-top: -79px;
+    margin-bottom: 58px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .list-rooms {
+    width: 40.7%;
+    margin-top: -74px;
+    margin-bottom: 55px;
+    margin-left: -6px;
+  }
+}

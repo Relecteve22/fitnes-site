@@ -1,0 +1,14 @@
+.page-header {
+  background-color: red;
+  background-image: url("../img/bg-header-big.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: $tablet-width-max) {
+  background-image: url("../img/bg-header-medium.png");
+}
+
+@media (max-width: $mobile-width-only) {
+  background-image: url("../img/bg-header-min.png");
+}

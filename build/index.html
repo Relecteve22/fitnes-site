@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Фитнес, Fitens, Фитнес за уралом">
-  <meta name="description" content="Фитнес - оффициальный сайт фитнес компании.">
+  <meta name="keywords" content="Sypergym, Фитнес, Fitens, Фитнес за уралом">
+  <meta name="description" content="Sypergum - оффициальный сайт фитнес компании.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="Liga A">
-  <title>Фитнес</title>
+  <title>Sypergym</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/BebasNeue-Bold.woff2">
   <link rel="preload" href="fonts/BebasNeue-Regular.woff2">
@@ -16,11 +16,57 @@
   <link rel="preload" href="fonts/RobotoCondensed-Light.woff2">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="page-header">
+    <h1 class="visually-hidden">Sypergum - оффициальный сайт фитнес компании.</h1>
+    <section class="menu-header">
+      <a class="menu-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-big.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-medium.svg">
+          <img class="menu-header__logo-image" src="img/logo-min.svg" alt="Sypergym">
+        </picture>
+      </a>
+      <a class="menu-header__link menu-header__link--phone" href="tel:+78005555555">
+        <span class="menu-header__link-text">8-800-555-55-55</span>
+      </a>
+    </section>
+    <footer class="promo-header">
+      <span class="promo-header__city">Омск</span>
+      <h2 class="promo-header__title">Фитнес центр</h2>
+      <ul class="promo-header__list list-rooms">
+        <li class="list-rooms__item">Тренажёрный зал</li>
+        <li class="list-rooms__item">Групповые занятия</li>
+        <li class="list-rooms__item">Кардио-зона</li>
+      </ul>
+      <button class="promo-header__buy-item">Купить абонемент</button>
+      <ul class="promo-header__list-social list-social-text">
+        <li class="list-social-text__item">
+          <a class="list-social-text__item-link" href="https://www.facebook.com/academy.liga/">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            Fb
+          </a>
+        </li>
+        <li class="list-social-text__item">
+          <a class="list-social-text__item-link" href="https://vk.com/academy.liga">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+            Vk
+          </a>
+        </li>
+        <li class="list-social-text__item">
+          <a class="list-social-text__item-link" hraf="https://www.instagram.com/ligaacademy/">
+            <span class="visually-hidden">Мы в Инстаграме</span>
+            Ig
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </header>
   <script src="js/picturefill.js">
   </script>
   <script src="js/svg4everybody.js">
   </script>
   <script>svg4everybody(); </script>
+  <script src="js/scroll.js">
+  </script>
 </body>
 </html>
