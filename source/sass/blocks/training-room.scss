@@ -1,0 +1,226 @@
+.training-room {
+  position: relative;
+
+  display: flex;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1220px;
+  min-height: 761.5px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 119px;
+}
+
+.training-room__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 60px;
+}
+
+.training-room__title {
+  margin: 0;
+  margin-top: 49px;
+
+  font-family: "BebasNeue", cursive;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+.training-room__square {
+  margin-top: 10px;
+  margin-bottom: 34px;
+
+  font-size: 18px;
+}
+
+.training-room__description {
+  width: 361px;
+  margin: 0;
+  margin-top: 8px;
+
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.training-room__image {
+  margin-left: 5.5%;
+  margin-top: 1px;
+}
+
+.training-room__image--two {
+  display: flex;
+  margin: 0;
+}
+
+.training-room__wrapper-image--two {
+  position: absolute;
+  bottom: 126px;
+  right: 31.8%;
+
+  display: flex;
+  margin-left: 0;
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(20, 54, 122, 0.5);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.training-room__play-video {
+  position: absolute;
+  top: 64px;
+  left: 35.9%;
+  z-index: 1;
+
+  padding: 0;
+  width: 100px;
+  height: 100px;
+
+  background-image: url("../img/play-button.svg");
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $tablet-width-max) {
+  .training-room {
+    flex-direction: column;
+    min-width: $mobile-width;
+    max-width: 760px;
+    min-height: 854px;
+    padding: 0 30px;
+  }
+
+  .training-room__wrapper {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .training-room__title {
+    margin: 0 auto;
+    margin-top: 99px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .training-room__square {
+    margin: 0 auto;
+    margin-top: 13px;
+    margin-bottom: 36px;
+  }
+
+  .training-room__description--two {
+    display: none;
+  }
+
+  .training-room__description {
+    width: 74%;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .training-room__wrapper-image--one {
+    margin: 44px auto 0;
+  }
+
+  .training-room__wrapper-image--two {
+    bottom: 100px;
+    right: 32.4%;
+  }
+
+  .training-room__play-video {
+    top: 46px;
+
+    width: 73px;
+    height: 73px;
+
+    background-image: url("../img/play-button-min.svg");
+  }
+
+  .training-room__image {
+    margin: 0;;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .training-room {
+    width: 100%;
+    padding: 0;
+    min-height: 926px;
+  }
+
+  .training-room__wrapper {
+    min-width: $mobile-width;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .training-room__title {
+    margin: 0;
+    margin-top: 68px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .training-room__square {
+    margin: 10px 0 27px;
+  }
+
+
+  .training-room__description {
+    width: 91%;
+    margin: 0;
+
+    text-align: left;
+  }
+
+  .training-room__wrapper-image--one {
+    min-width: $mobile-width;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 33px;
+    padding: 0;
+  }
+
+  .training-room__wrapper-image--two {
+    position: relative;
+    bottom: 0;
+    right: 0;
+
+    min-width: $mobile-width;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+
+  .training-room__play-video {
+    left: 38.9%;
+  }
+}
