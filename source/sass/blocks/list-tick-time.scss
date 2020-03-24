@@ -25,3 +25,23 @@
     opacity: 1;
   }
 }
+
+@media (max-width: $tablet-width-max) {
+  .list-tick-time {
+    margin-top: 33px;
+  }
+
+  .list-tick-time__item {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .list-tick-time {
+    margin-top: 23px;
+  }
+
+  .list-tick-time__item {
+    font-size: 16px;
+  }
+}

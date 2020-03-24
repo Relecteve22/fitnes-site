@@ -5,6 +5,8 @@
 }
 
 .subscription__container {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -12,6 +14,23 @@
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 30px;
+  min-height: 846px;
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    bottom: -95px;
+    right: -182px;
+
+    width: 321px;
+    height: 384px;
+
+    background-image: url("../img/blins-big.png");
+    background-repeat: no-repeat;
+
+    transform: rotate(150deg);
+  }
 }
 
 .subscription__wrapper {
@@ -20,6 +39,10 @@
   width: 342px;
   margin: 0 auto;
   margin-top: 113px;
+}
+
+.subscription__wrapper-list {
+  z-index: 1;
 }
 
 .subscription__title {
@@ -42,7 +65,7 @@
   background-color: rgba(120, 120, 120, 0.2);
 }
 
-.subscription__line--active {
+.subscription__line-active {
   position: absolute;
   top: 0px;
   left: 0;
@@ -51,4 +74,78 @@
   height: 2px;
 
   background-color: #d10a42;
+}
+
+@media (max-width: $tablet-width-max) {
+  .subscription__container {
+    min-width: $mobile-width;
+    max-width: 760px;
+    padding: 0 20px;
+    min-height: 1779px;
+
+    &:after {
+      bottom: -76px;
+      right: -16px;
+
+      width: 289px;
+      height: 345px;
+
+      background-image: url("../img/blins-medium.png");
+    }
+  }
+
+  .subscription__wrapper {
+    margin-top: 100px;
+    width: 333px;
+  }
+
+  .subscription__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .subscription__line {
+    width: 332px;
+    height: 3px;
+    margin-top: 14px;
+  }
+
+  .subscription__line-active {
+    width: 61px;
+    height: 3px;
+  }
+
+  .subscription__wrapper-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .subscription__container {
+    min-width: $mobile-width;
+    // max-width: 320px;
+    padding: 0 15px;
+    min-height: 1487px;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .subscription__wrapper {
+    width: 100%;
+    min-width: 290px;
+    max-width: 290px;
+    margin-top: 68px;
+  }
+
+  .subscription__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .subscription__line {
+    width: 100%;
+  }
 }

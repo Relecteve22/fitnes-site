@@ -3,7 +3,8 @@
 (function () {
   var listTime = document.querySelectorAll('.list-tick-time li');
   var listProducts = document.querySelectorAll('.list-products li');
-  var activeLine = document.querySelector('.subscription__line--active');
+  var activeLine = document.querySelector('.subscription__line-active');
+  var subscriptionWrapper = document.querySelector('.subscription__wrapper');
 
   var oneInfoPrices = [
     '5000',
@@ -56,21 +57,25 @@
       if (evt.target === itemTime) {
         itemTime.classList.add('list-tick-time__item--active');
         activeLine.style.width = widthItemTime + 'px';
-        activeLine.style.left = (itemTime.offsetLeft - 589) + 'px';
+        activeLine.style.left = (itemTime.offsetLeft - subscriptionWrapper.offsetLeft) + 'px';
 
         var arrayInfos = Array.prototype.slice.call(listProducts, 0);
         arrayInfos.forEach(function (listProduct, b) {
           var itemTimeDescription = listProduct.querySelector('.list-products__item-time');
           var itemPrice = listProduct.querySelector('.list-products__price-number');
+          var itemPriceBg = listProduct.querySelector('.list-products__bg-price');
           if (i === 0) {
+            itemPriceBg.textContent = oneInfoPrices[b];
             itemPrice.textContent = oneInfoPrices[b];
             itemTimeDescription.textContent = oneInfoTimeDecriptions[b];
           }
           if (i === 1) {
+            itemPriceBg.textContent = twoInfoPrices[b];
             itemPrice.textContent = twoInfoPrices[b];
             itemTimeDescription.textContent = twoInfoTimeDecriptions[b];
           }
           if (i === 2) {
+            itemPriceBg.textContent = threeInfoPrices[b];
             itemPrice.textContent = threeInfoPrices[b];
             itemTimeDescription.textContent = threeInfoTimeDecriptions[b];
           }
