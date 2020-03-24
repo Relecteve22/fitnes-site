@@ -97,6 +97,64 @@
         </button>
       </div>
     </section>
+    <section class="subscription">
+      <div class="subscription__container">
+        <div class="subscription__wrapper">
+          <h2 class="subscription__title">Абонементы</h2>
+          <ul class="subscription__list list-tick-time">
+            <li class="list-tick-time__item list-tick-time__item--active">1 месяц</li>
+            <li class="list-tick-time__item">6 месяцев</li>
+            <li class="list-tick-time__item">12 месяцев</li>
+          </ul>
+          <div class="subscription__line">
+            <div class="subscription__line--active"></div>
+          </div>
+        </div>
+        <div class="subscription__wrapper-list">
+          <ul class="subscription__list-products list-products">
+            <li class="list-products__item">
+              <h3 class="list-products__item-title">С тренером</h3>
+              <p class="list-products__item-time">12 занятий</p>
+              <div class="list-products__item-price">
+                <span class="list-products__price-number">5000</span>
+                <span class="list-products__price-currency">
+                  <svg class="list-products__price-currency-svg" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rubel"></use>
+                  </svg>
+                </span>
+              </div>
+              <a class="list-products__item-link" href="subscription-buy.html">Купить абонемент</a>
+            </li>
+            <li class="list-products__item">
+              <h3 class="list-products__item-title">Дневной</h3>
+              <p class="list-products__item-time">с 8:00 до 17:00 </p>
+              <div class="list-products__item-price">
+                <span class="list-products__price-number">1700</span>
+                <span class="list-products__price-currency">
+                  <svg class="list-products__price-currency-svg" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rubel"></use>
+                  </svg>
+                </span>
+              </div>
+              <a class="list-products__item-link" href="subscription-buy.html">Купить абонемент</a>
+            </li>
+            <li class="list-products__item">
+              <h3 class="list-products__item-title">Полный день</h3>
+              <p class="list-products__item-time">с 8:00 до 22:00 </p>
+              <div class="list-products__item-price">
+                <span class="list-products__price-number">2700</span>
+                <span class="list-products__price-currency">
+                  <svg class="list-products__price-currency-svg" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rubel"></use>
+                  </svg>
+                </span>
+              </div>
+              <a class="list-products__item-link" href="subscription-buy.html">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
   <script src="js/picturefill.js">
   </script>
@@ -104,6 +162,8 @@
   </script>
   <script>svg4everybody(); </script>
   <script src="js/scroll.js">
+  </script>
+  <script src="js/tabs-subscription.js">
   </script>
 </body>
 </html>

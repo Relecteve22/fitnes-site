@@ -1,0 +1,27 @@
+.list-tick-time {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.list-tick-time__item {
+  font-size: 20px;
+  color: rgba(16, 38, 84, 0.5);
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.list-tick-time__item--active {
+  color: #102654;
+
+  &:hover {
+    opacity: 1;
+  }
+}
