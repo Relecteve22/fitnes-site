@@ -44,9 +44,10 @@
     var arrayListTime = Array.prototype.slice.call(listTime, 0);
     arrayListTime.forEach(function (itemTime, i) {
       var widthItemTime = itemTime.offsetWidth;
-      if (itemTime.classList.contains('list-tick-time__item--active') === evt.target) {
-        return;
-      }
+      // var activeItemTime = document.querySelector('.list-tick-time__item--active');
+      // if (activeItemTime === evt.target) {
+      //   return;
+      // }
 
       if (itemTime.classList.contains('list-tick-time__item--active')) {
         itemTime.classList.remove('list-tick-time__item--active');
