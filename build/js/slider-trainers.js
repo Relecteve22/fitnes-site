@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  $('.multiple-items').slick({
+  $('.list-teachers').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4
