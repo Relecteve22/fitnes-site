@@ -1,0 +1,27 @@
+.list-advantages {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 67px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.list-advantages__item {
+  width: 320px;
+}
+
+.list-advantages__item--page {
+  position: absolute;
+
+  width: 240px;
+  min-height: 307px;
+  display: none;
+}
+
+.list-advantages__item-number {
+
+}
