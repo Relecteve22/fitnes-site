@@ -81,11 +81,6 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-// gulp.task("slick", function () {
-//   return gulp.src("source/slick/*")
-//     .pipe(gulp.dest("build"));
-// });
-
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",

@@ -1,49 +1,47 @@
-.list-teachers {
+.list-teachers .slick-track {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  margin-top: 53px;
-  padding: 0;
-
-  list-style: none;
 }
 
-.list-teachers__item {
+.list-teachers .slick-slide {
   position: relative;
 
   display: flex;
   flex-direction: column-reverse;
+  min-width: 260px;
+  max-width: 260px;
+  min-height: 294px;
 
   background-color: gray;
 
   &:hover {
     flex-direction: column;
     cursor: pointer;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(16, 38, 84, 0.89);
+    }
+
+    .list-teachers__item-hover {
+      display: flex;
+      z-index: 1;
+    }
+
+    .list-teachers__item-title {
+      margin-top: 55px;
+      margin-bottom: 0;
+      z-index: 1;
+    }
   }
-
-  &:hover .list-teachers__item-hover {
-    display: flex;
-  }
-
-  &:hover .list-teachers__item-title {
-    margin-top: 55px;
-    margin-bottom: 0;
-  }
-
-  // &::after {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-
-  //   width: 100%;
-  //   height: 100%;
-
-  //   background-color: rgba(16, 38, 84, 0.89);
-  // }
-
-  // &:hover &::after {
-  //   content: "";
-  // }
 }
 
 .list-teachers__item-title {
@@ -53,11 +51,6 @@
   font-weight: bold;
   font-size: 18px;
   color: #ffffff;
-}
-
-.list-teachers__item {
-  width: 260px;
-  min-height: 294px;
 }
 
 .list-teachers__item--one {
@@ -128,6 +121,41 @@
   }
 }
 
-.list-teachers__item--hide {
-  display: none;
+.list-teachers .slick-arrow {
+  position: absolute;
+  top: 288px;
+
+  padding: 0;
+  width: 18px;
+  height: 34px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.list-teachers .slick-prev {
+  left: -28px;
+
+  background-image: url("../img/arrow-left.svg");
+
+  @media (max-width: 1290px) {
+    left: 0;
+  }
+}
+
+.list-teachers .slick-next {
+  right: -28px;
+
+  background-image: url("../img/arrow-right.svg");
+
+  @media (max-width: 1290px) {
+    right: 0;
+  }
 }
