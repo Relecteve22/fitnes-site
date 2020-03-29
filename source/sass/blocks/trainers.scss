@@ -23,3 +23,51 @@
   line-height: 49px;
   letter-spacing: 0.03em;
 }
+
+@media (max-width: $tablet-width-max) {
+  .trainers {
+    margin-top: 60px;
+    // min-height: 600px;
+  }
+
+  .trainers .slick-slider {
+    max-width: 566px;
+    min-width: 566px;
+    margin: 0 auto;
+  }
+
+  .trainers__container {
+    min-width: $mobile-width;
+    max-width: 760px;
+    padding: 35px 31px 0;
+  }
+
+  .trainers__title {
+    margin-bottom: 40px;
+    text-align: center;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .trainers .slick-slider {
+    max-width: 226px;
+    min-width: 226px;
+    margin: 0 auto;
+  }
+
+  .trainers__container {
+    min-width: $mobile-width;
+    max-width: 320px;
+    padding: 2px 31px 0;
+  }
+
+  .trainers__title {
+    margin-bottom: 44px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+}

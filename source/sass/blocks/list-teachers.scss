@@ -13,6 +13,7 @@
   min-height: 294px;
 
   background-color: gray;
+  background-size: cover;
 
   &:hover {
     flex-direction: column;
@@ -157,5 +158,63 @@
 
   @media (max-width: 1290px) {
     right: 0;
+  }
+}
+
+@media (max-width: $tablet-width-max) {
+  .list-teachers .slick-slide {
+    min-width: 268px;
+    max-width: 268px;
+  }
+
+  .list-teachers .slick-arrow {
+    top: 247px;
+  }
+
+  .list-teachers .slick-prev {
+    left: 41px;
+  }
+
+  .list-teachers .slick-next {
+    right: 41px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .list-teachers .slick-slide {
+    min-width: 226px;
+    max-width: 226px;
+    min-height: 274px;
+
+    &:hover {
+      .list-teachers__item-title {
+        margin-top: 46px;
+      }
+
+      .list-teachers__item-info {
+        padding-left: 20px;
+
+        &:after {
+          left: 4px;
+        }
+      }
+    }
+  }
+
+  .list-teachers .slick-arrow {
+    top: 207px;
+
+    width: 10px;
+    height: 19px;
+
+    background-size: 10px 19px;
+  }
+
+  .list-teachers .slick-prev {
+    left: 15px;
+  }
+
+  .list-teachers .slick-next {
+    right: 15px;
   }
 }
