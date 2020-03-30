@@ -25,6 +25,10 @@
 }
 
 @media (max-width: $tablet-width-max) {
+  .advantages {
+    min-height: 755px;
+  }
+
   .advantages__container {
     min-height: 637px;
     min-width: $mobile-width;

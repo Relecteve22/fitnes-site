@@ -1,0 +1,207 @@
+.stocks {
+  min-height: 969px;
+}
+
+.stocks__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 119px;
+}
+
+.stocks__title {
+  margin: 0 auto;
+  margin-bottom: 51px;
+
+  font-family: "BebasNeue", cursive;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+.stocks__wrapper {
+  display: flex;
+}
+
+.stocks__mega-stock {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  min-height: 462px;
+  padding-right: 300px;
+  padding-left: 45px;
+  padding-top: 34px;
+  padding-bottom: 44px;
+
+  background-color: #ed0233;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 280px;
+    height: 462px;
+
+    background-image: url("../img/girl-foto-medium.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.stocks__mega-stock-year {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 156%;
+  color: #ffffff;
+}
+
+.stocks__mega-stock-number {
+  margin-top: 18px;
+
+  font-weight: bold;
+  font-size: 70px;
+  color: #ffffff;
+}
+
+.stocks__mega-stock-info {
+  margin: 0;
+  margin-top: 44px;
+  width: 92%;
+
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.stocks__mega-stock-link {
+  margin-top: auto;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.stocks__wrapper-list {
+  margin-left: auto;
+}
+
+@media (max-width: $tablet-width-max) {
+  .stocks__container {
+    min-width: $mobile-width;
+    max-width: 760px;
+    padding: 0 41px;
+    padding-top: 100px;
+  }
+
+  .stocks__title {
+    margin-bottom: 40px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .stocks__wrapper {
+    flex-direction: column;
+  }
+
+  .stocks__mega-stock {
+    width: 100%;
+    padding-right: 420px;
+    &::after {
+      width: 399px;
+
+      background-image: url("../img/girl-foto-big.png");
+    }
+  }
+
+  .stocks__wrapper-list {
+    margin-left: 0;
+    margin-top: 31px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .stocks__container {
+    min-width: $mobile-width;
+    max-width: 320px;
+    padding: 0 15px;
+    padding-top: 68px;
+  }
+
+  .stocks__title {
+    margin-bottom: 45px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .stocks__wrapper {
+    min-height: 598px;
+  }
+
+  .stocks__mega-stock {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 346px;
+    min-height: 598px;
+
+    &::after {
+      top: auto;
+      bottom: 0;
+
+      width: 290px;
+      height: 299px;
+
+      background-image: url("../img/girl-foto-small.png");
+    }
+  }
+
+  .stocks__wrapper-list {
+    margin-left: 0;
+    margin-top: 31px;
+  }
+
+  .stocks__mega-stock-year {
+    margin: 0 auto;
+  }
+
+  .stocks__mega-stock-number {
+    margin: 0 auto;
+    margin-top: 19px;
+  }
+
+  .stocks__mega-stock-info {
+    margin: 0 auto;
+    margin-top: 38px;
+    width: 200px;
+
+    text-align: center;
+  }
+
+  .stocks__mega-stock-link {
+    margin: 0 auto;
+    margin-top: auto;
+  }
+
+  .stocks__wrapper-list {
+    margin-top: 30px;
+  }
+}

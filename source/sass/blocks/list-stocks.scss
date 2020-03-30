@@ -1,0 +1,105 @@
+.list-stocks {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.list-stocks__item {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  min-height: 211px;
+  padding: 27px 27px 29px;
+
+  border-style: solid;
+  border-width: 7px;
+  border-image: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+  border-image-slice: 1;
+}
+
+.list-stocks__item-sale {
+  font-weight: bold;
+  font-size: 26px;
+  color: #1c3374;
+}
+
+.list-stocks__item-description {
+  margin: 0;
+  margin-top: 12px;
+
+  font-size: 16px;
+  line-height: 140%;
+  color: #1c3374;
+}
+
+.list-stocks__item-link {
+  margin-top: auto;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  text-transform: uppercase;
+
+  color: #1c3374;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $tablet-width-max) {
+  .list-stocks {
+    flex-direction: row;
+  }
+
+  .list-stocks__item {
+    width: 324px;
+  }
+
+  .list-stocks__item-description--one {
+    width: 182px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .list-stocks {
+    flex-direction: column;
+    min-height: 452px;
+  }
+
+  .list-stocks__item {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 36px;
+    padding-bottom: 41px;
+    width: 100%;
+  }
+
+  .list-stocks__item-sale {
+    margin: 0 auto;
+  }
+
+  .list-stocks__item-description {
+    width: 169px;
+    margin: 0 auto;
+    margin-top: 14px;
+
+    text-align: center;
+  }
+
+  .list-stocks__item-description--one {
+    width: 182px;
+  }
+
+  .list-stocks__item-link {
+    margin: 0 auto;
+    margin-top: auto;
+  }
+}
