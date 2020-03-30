@@ -1,0 +1,206 @@
+.reviews__container {
+  position: relative;
+
+  min-height: 601px;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 331px;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 53px;
+  text-align: center;
+
+  font-family: "BebasNeue", cursive;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+.reviews .slick-track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews .slick-slide {
+  position: relative;
+
+  width: 560px;
+  min-height: 242px;
+  padding: 60px 60px 35px 170px;
+
+  background: #1C3374;
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 62px;
+    left: 60px;
+
+    width: 80px;
+    height: 80px;
+
+    background-image: url("../img/avatar-opinion-big.png");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.reviews__item-name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+
+  margin: 0;
+}
+
+.reviews__item-description {
+  margin: 0;
+  margin-top: 14px;
+
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.reviews .slick-arrow {
+  position: absolute;
+  top: 207px;
+
+  padding: 0;
+  width: 17px;
+  height: 32px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.reviews .slick-prev {
+  left: 273px;
+
+  background-image: url("../img/arrow-left.svg");
+}
+
+.reviews .slick-next {
+  right: 273px;
+
+  background-image: url("../img/arrow-right.svg");
+}
+
+@media (max-width: $tablet-width-max) {
+  .reviews__container {
+    min-width: $mobile-width;
+    max-width: 760px;
+    padding: 0 97px;
+  }
+
+  .reviews__title {
+    margin-bottom: 41px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .reviews .slick-slide {
+    width: 566px;
+    padding: 60px 63px 35px 172px;
+
+    &::before {
+      left: 66px;
+    }
+  }
+
+  .reviews .slick-arrow {
+    top: 186px;
+  }
+
+  .reviews .slick-prev {
+    left: 40px;
+  }
+
+  .reviews .slick-next {
+    right: 40px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .reviews__container {
+    min-width: $mobile-width;
+    max-width: 320px;
+    padding: 0 47px;
+  }
+
+  .reviews__title {
+    margin-bottom: 43px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .reviews .slick-slide {
+    display: flex;
+    flex-direction: column;
+    width: 226px;
+    min-height: 335px;
+    padding: 49px 0 30px 0;
+
+    &::before {
+      left: 41px;
+      top: 40px;
+
+      width: 68px;
+      height: 68px;
+
+      background-image: url("../img/avatar-opinion-small.png");
+    }
+  }
+
+  .reviews__item-name {
+    width: 65px;
+    margin-left: 56%;
+
+    line-height: 130%;
+  }
+
+  .reviews__item-description {
+    margin: 0 auto;
+    width: 180px;
+    margin-top: 22px;
+
+    text-align: center;
+  }
+
+  .reviews .slick-arrow {
+    top: 232px;
+
+    width: 20px;
+    height: 20px;
+
+    background-size: 10px 19px;
+    background-repeat: no-repeat;
+  }
+
+  .reviews .slick-prev {
+    left: 15px;
+  }
+
+  .reviews .slick-next {
+    right: 15px;
+  }
+}

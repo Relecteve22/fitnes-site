@@ -1,5 +1,5 @@
 .stocks {
-  min-height: 969px;
+  min-height: 798px;
 }
 
 .stocks__container {
@@ -104,6 +104,10 @@
 }
 
 @media (max-width: $tablet-width-max) {
+  .stocks {
+    min-height: 985px;
+  }
+
   .stocks__container {
     min-width: $mobile-width;
     max-width: 760px;
@@ -139,6 +143,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .stocks {
+    min-height: 1294px;
+  }
+
   .stocks__container {
     min-width: $mobile-width;
     max-width: 320px;
