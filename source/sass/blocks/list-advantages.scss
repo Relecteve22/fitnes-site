@@ -3,25 +3,286 @@
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   margin-top: 67px;
   padding: 0;
+  padding-left: 27px;
+  min-height: 315px;
 
   list-style: none;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 340px;
+    height: 2px;
+
+    background-color: rgba(209, 10, 66, 0.2);
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 340px;
+    height: 2px;
+
+    background-color: rgba(209, 10, 66, 0.2);
+  }
 }
 
 .list-advantages__item {
-  width: 320px;
+  display: flex;
+  width: 33.6%;
+}
+
+.list-advantages__wrapper-right {
+  width: 60%;
+  margin-left: auto;
+}
+
+.list-advantages__wrapper-left {
+  width: 30%;
+}
+
+.list-advantages__item-title {
+  margin: 0;
+  margin-top: 2px;
+
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.list-advantages__item-info {
+  margin: 0;
+  margin-top: 13px;
+
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.list-advantages__wrapper-right--info-cars {
+  width: 67%;
+  margin-left: 0;
+}
+
+.list-advantages__wrapper-right--info-years {
+  width: 67%;
+  margin-left: 0;
+}
+
+.list-advantages__item--mt {
+  margin-top: auto;
 }
 
 .list-advantages__item--page {
   position: absolute;
+  left: 38.6%;
+  top: 3px;
 
   width: 240px;
   min-height: 307px;
-  display: none;
+  flex-direction: column;
+  padding-top: 79px;
+
+  background: #1c3374;
 }
 
-.list-advantages__item-number {
+.list-advantages__item--page .list-advantages__item-number {
+  margin: 0 auto;
 
+  font-weight: bold;
+  font-size: 74px;
+  color: #ffffff;
+}
+
+.list-advantages__item--page .list-advantages__item-title {
+  margin: 0 auto;
+  margin-top: 39px;
+
+  font-weight: bold;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.list-advantages__item--page .list-advantages__item-info {
+  margin: 0 auto;
+  margin-top: 46px;
+  width: 180px;
+
+  font-weight: normal;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: $tablet-width-max) {
+  .list-advantages {
+    margin-top: 48px;
+    padding-left: 14px;
+    min-height: 473px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .list-advantages__item {
+    width: 49%;
+  }
+
+  .list-advantages__wrapper-right {
+    width: 66%;
+  }
+
+  .list-advantages__wrapper-right--info-cars {
+    width: 82%;
+  }
+
+  .list-advantages__wrapper-right--info-cars .list-advantages__item-info {
+    width: 94%;
+  }
+
+  .list-advantages__wrapper-right--info-years {
+    width: 82%;
+  }
+
+  .list-advantages__wrapper-right--info-years .list-advantages__item-info {
+    width: 94%;
+  }
+
+  .list-advantages__item-title {
+    margin-top: 0;
+
+    font-size: 20px;
+  }
+
+  .list-advantages__item-info {
+    margin-top: 8px;
+  }
+
+  .list-advantages__item--page {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 442px;
+    min-height: 197px;
+    padding-top: 58px;
+    margin-left: 17%;
+    margin-top: -3px;
+  }
+
+  .list-advantages__item--page .list-advantages__item-title {
+    margin-top: 35px;
+
+    font-size: 22px;
+  }
+
+  .list-advantages__item--page .list-advantages__item-info {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .list-advantages {
+    min-height: 1082px;
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .list-advantages__item {
+    flex-direction: column;
+    width: 100%;
+    min-height: 192px;
+    margin-top: 0;
+  }
+
+  .list-advantages__wrapper-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .list-advantages__wrapper-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .list-advantages__item-number {
+    margin: 0 auto;
+    padding-top: 4px;
+  }
+
+  .list-advantages__item-measuring-system {
+    margin: 0 auto;
+    margin-top: -2px;
+  }
+
+  .list-advantages__item-title {
+    margin: 0 auto;
+    margin-top: 11px;
+
+    font-size: 20px;
+  }
+
+  .list-advantages__item-info {
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 226px;
+
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  .list-advantages__item--page {
+    width: 100%;
+    min-height: 239px;
+    padding-top: 60px;
+    margin-left: 0;
+    margin-top: 5.5px;
+  }
+
+  .list-advantages__wrapper-right--info-cars {
+    width: 100%;
+  }
+
+  .list-advantages__wrapper-right--info-cars .list-advantages__item-info {
+    width: 226px;
+  }
+
+  .list-advantages__wrapper-right--info-years {
+    width: 100%;
+  }
+
+  .list-advantages__wrapper-right--info-years .list-advantages__item-info {
+    width: 226px;
+  }
+
+  .list-advantages__item--page .list-advantages__item-title {
+    margin-top: 27px;
+  }
+
+  .list-advantages__item--page .list-advantages__item-info {
+    margin-top: 16px;
+  }
+
+  .list-advantages__item--one {
+    margin-top: 44px;
+  }
 }

@@ -27,7 +27,7 @@
 @media (max-width: $tablet-width-max) {
   .trainers {
     margin-top: 60px;
-    // min-height: 600px;
+    min-height: 510px;
   }
 
   .trainers .slick-slider {
@@ -52,6 +52,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .trainers {
+    min-height: 422px;
+  }
+
   .trainers .slick-slider {
     max-width: 226px;
     min-width: 226px;
