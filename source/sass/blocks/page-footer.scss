@@ -1,4 +1,6 @@
 .page-footer {
+  flex: 0 0 auto;
+
   background-color: #030a1a;
 }
 
@@ -44,11 +46,10 @@
     max-width: 320px;
     min-height: 260px;
     padding: 0 15px;
-    padding-top: 12px;
+    padding-top: 40px;
   }
 
   .page-footer__logo {
-    width: 68px;
-    margin-left: 0;
+    display: none;
   }
 }

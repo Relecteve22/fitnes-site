@@ -1,4 +1,6 @@
 .page-header {
+  flex: 1 0 auto;
+
   background-color: red;
   background-image: url("../img/bg-header-big.png");
   background-repeat: no-repeat;
@@ -6,9 +8,13 @@
 }
 
 @media (max-width: $tablet-width-max) {
-  background-image: url("../img/bg-header-medium.png");
+  .page-header {
+    background-image: url("../img/bg-header-medium.png");
+  }
 }
 
 @media (max-width: $mobile-width-only) {
-  background-image: url("../img/bg-header-min.png");
+  .page-header {
+    background-image: url("../img/bg-header-min.png");
+  }
 }

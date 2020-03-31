@@ -75,5 +75,37 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .list-social {
+    margin-top: 19px;
+    margin-left: 0;
+  }
 
+  .list-social li {
+    width: 32px;
+    height: 32px;
+  }
+
+  .list-social__item--vk::after {
+    width: 32px;
+    height: 17px;
+
+    background-size: 32px 17px;
+  }
+
+  .list-social__item--insta::after {
+    width: 27px;
+    height: 27px;
+
+    background-size: 27px 27px;
+  }
+
+
+  .list-social .list-social__item--fb::after {
+    left: -6px;
+
+    width: 22px;
+    height: 37px;
+
+    background-size: 22px 37px;
+  }
 }
