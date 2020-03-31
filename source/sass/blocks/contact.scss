@@ -1,0 +1,58 @@
+.contact {
+  width: 410px;
+  margin-left: auto;
+}
+
+.contact__title {
+  margin: 0;
+  margin-top: 9px;
+
+  font-family: "BebasNeue", cursive;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  color: #102654;
+}
+
+.contact__list {
+  margin-top: 21px;
+}
+
+@media (max-width: $tablet-width-max) {
+  .contact {
+    margin-left: 0;
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .contact__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .contact__list {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .contact {
+    width: 100%;
+    margin: 0 auto;
+    min-width: $mobile-width;
+    max-width: 320px;
+    padding: 0 14px;
+    padding-top: 59px;
+  }
+
+  .contact__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .contact__list {
+    margin-top: 19px;
+  }
+}

@@ -1,0 +1,64 @@
+.contact-and-free-lernen {
+  position: relative;
+
+  min-height: 337px;
+
+  background-image: linear-gradient(to left,#ffffff 50%,#102654 50%);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #74819c;
+  }
+}
+
+.contact-and-free-lernen__container {
+  display: flex;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 60px;
+  padding-right: 80px;
+
+  color: #ffffff;
+}
+
+@media (max-width: $tablet-width-max) {
+  .contact-and-free-lernen {
+    min-height: 675px;
+
+    background-image: linear-gradient(to top,#fff 52%,#102654 48%);
+  }
+
+  .contact-and-free-lernen__container {
+    flex-direction: column;
+    min-width: $mobile-width;
+    max-width: 760px;
+    padding: 69px 156px 0 128px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .contact-and-free-lernen {
+    min-height: 893px;
+
+    background-image: none;
+  }
+
+  .contact-and-free-lernen__container {
+    min-width: $mobile-width;
+    // max-width: 320px;
+    padding: 0;
+    padding-top: 0;
+  }
+}
+

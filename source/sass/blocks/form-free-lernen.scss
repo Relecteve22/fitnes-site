@@ -1,0 +1,78 @@
+.form-free-lernen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 27px;
+}
+
+.form-free-lernen__input {
+  width: 190px;
+  min-height: 35px;
+  padding-right: 15px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #74819c;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.form-free-lernen__button {
+  margin-top: 28px;
+  width: 100%;
+  padding: 16px 15px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: 3px solid #ffffff;
+  background-color: transparent;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $tablet-width-max) {
+  .form-free-lernen__input {
+    width: 208px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .form-free-lernen {
+    margin-top: 5px;
+    padding: 0 13px;
+  }
+
+  .form-free-lernen__label {
+    margin-top: 24px;
+    width: 100%;
+  }
+
+  .form-free-lernen__input {
+    width: 100%;
+  }
+
+  .form-free-lernen__button {
+    margin-top: 40px;
+  }
+}

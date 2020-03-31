@@ -1,0 +1,46 @@
+.free-lernen {
+  width: 410px;
+}
+
+.free-lernen__title {
+  margin: 0;
+
+  font-family: "BebasNeue", cursive;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+@media (max-width: $tablet-width-max) {
+  .free-lernen {
+    width: 100%;
+    min-height: 255px;
+  }
+
+  .free-lernen__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .free-lernen {
+    display: flex;
+    flex-direction: column;
+    padding-top: 68px;
+    min-height: 385.5px;
+    background-color: #102654;
+  }
+
+  .free-lernen__title {
+    margin: 0 auto;
+    padding-right: 51px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
