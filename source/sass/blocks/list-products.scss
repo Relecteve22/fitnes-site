@@ -150,6 +150,10 @@
   .list-products__item {
     width: 442px;
     min-height: 448px;
+
+    &:hover h3 {
+      margin-top: 54px;
+    }
   }
 
   .list-products__item-title {
@@ -169,6 +173,14 @@
   .list-products__item {
     width: 100%;
     min-height: 384px;
+
+    &:hover h3 {
+      margin-top: 32px;
+    }
+
+    &:hover a {
+      margin-top: 44px;
+    }
   }
 
   .list-products__item-title {
