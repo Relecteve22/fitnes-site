@@ -439,7 +439,7 @@
               <input class="form-free-lernen__input" type="text" name="name" placeholder="Имя" aria-label="Имя" required="">
             </label>
             <label class="form-free-lernen__label">
-              <input class="form-free-lernen__input" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" required="">
+              <input class="form-free-lernen__input" id="tel-form" type="tel" name="phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" aria-label="Телефон" required="">
             </label>
             <button class="form-free-lernen__button" type="submit">Отправить</button>
           </form>
@@ -535,7 +535,11 @@
   <script src="js/svg4everybody.js">
   </script>
   <script>svg4everybody(); </script>
+  <script src="js/imask.min.js">
+  </script>
   <script src="js/scroll.js">
+  </script>
+  <script src="js/mask-tell.js">
   </script>
   <script src="js/tabs-subscription.js">
   </script>
