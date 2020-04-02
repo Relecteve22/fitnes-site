@@ -28,7 +28,7 @@
   width: 660px;
   height: 500px;
 
-  background-color: #000000;
+  background-color: #000145;
 }
 
 .promo__title {
@@ -291,17 +291,34 @@
   .promo__container {
     flex-direction: column;
     min-width: $mobile-width;
-    max-width: 320px;
-    padding: 0 16px;
+    // max-width: 320px;
+    padding: 0;
+
+    background-color: #ed0233;
+  }
+
+  .promo__wrapper-image {
+    display: flex;
+    width: 100%;
+    height: 292px;
+
+    background-color: #000145;
+  }
+
+  .promo__wrapper-image picture {
+    display: flex;
+    width: 100%;
   }
 
   .promo__wrapper {
-    width: 100%;
-    padding: 46px 20px 10px 43px
+    width: 290px;
+    padding: 46px 20px 10px 43px;
+    margin: 0 auto;
   }
 
   .promo__image {
     width: 290px;
     height: 292px;
+    margin: 0 auto;
   }
 }

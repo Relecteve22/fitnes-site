@@ -54,18 +54,20 @@
 @media (max-width: $mobile-width-only) {
   .trainers {
     min-height: 422px;
-  }
-
-  .trainers .slick-slider {
-    max-width: 226px;
-    min-width: 226px;
-    margin: 0 auto;
+    margin-top: 66px;
   }
 
   .trainers__container {
     min-width: $mobile-width;
-    max-width: 320px;
+    // max-width: 320px;
     padding: 2px 31px 0;
+  }
+
+  .trainers .slick-slider {
+    // max-width: 226px;
+    max-width: 100%;
+    min-width: 226px;
+    margin: 0 auto;
   }
 
   .trainers__title {

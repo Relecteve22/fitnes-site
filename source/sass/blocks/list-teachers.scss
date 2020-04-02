@@ -12,8 +12,8 @@
   max-width: 260px;
   min-height: 294px;
 
-  background-color: gray;
-  background-size: cover;
+  background-color: #c3c9d4;
+  // background-size: cover;
 
   &:hover {
     flex-direction: column;
@@ -185,8 +185,10 @@
 @media (max-width: $mobile-width-only) {
   .list-teachers .slick-slide {
     min-width: 226px;
-    max-width: 226px;
+    // max-width: 226px;
+    max-width: 100%;
     min-height: 274px;
+    background-position: 50% 0;
 
     &:hover {
       .list-teachers__item-title {
