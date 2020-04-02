@@ -167,6 +167,8 @@
   .list-teachers .slick-slide {
     min-width: 268px;
     max-width: 268px;
+
+    background-size: cover;
   }
 
   .list-teachers .slick-arrow {
@@ -188,6 +190,8 @@
     // max-width: 226px;
     max-width: 100%;
     min-height: 274px;
+
+    background-size: auto;
     background-position: 50% 0;
 
     &:hover {
