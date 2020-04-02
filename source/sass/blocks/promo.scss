@@ -25,8 +25,9 @@
 }
 
 .promo__image {
-  width: 660px;
-  height: 500px;
+  min-width: 660px;
+  min-height: 500px;
+  color: #ffffff;
 
   background-color: #000145;
 }
@@ -193,8 +194,8 @@
   }
 
   .promo__image {
-    width: 386px;
-    height: 292px;
+    min-width: 386px;
+    min-height: 292px;
   }
 
   .promo__title {
@@ -317,8 +318,8 @@
   }
 
   .promo__image {
-    width: 290px;
-    height: 292px;
+    min-width: 290px;
+    min-height: 292px;
     margin: 0 auto;
   }
 }

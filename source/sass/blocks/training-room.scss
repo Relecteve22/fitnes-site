@@ -46,6 +46,8 @@
 }
 
 .training-room__image {
+  min-width: 660px;
+  min-height: 401px;
   margin-left: 5.5%;
   margin-top: 1px;
 
@@ -107,6 +109,13 @@
   }
 }
 
+.training-room__image--two {
+  min-width: 364px;
+  min-height: 228px;
+
+  background-color: rgba(20,54,122,.5);
+}
+
 @media (max-width: $tablet-width-max) {
   .training-room {
     flex-direction: column;
@@ -165,7 +174,18 @@
   }
 
   .training-room__image {
-    margin: 0;;
+    min-width: 678px;
+    min-height: 345px;
+    margin: 0;
+  }
+
+  .training-room__image--two {
+    // width: 266px;
+    // height: 167px;
+    min-width: 266px;
+    min-height: 167px;
+
+    background-color: rgba(20,54,122,.5);
   }
 }
 
@@ -174,6 +194,11 @@
     width: 100%;
     padding: 0;
     min-height: 926px;
+  }
+
+  .training-room__image {
+    min-width: 320px;
+    min-height: 313px;
   }
 
   .training-room__wrapper {
@@ -225,5 +250,14 @@
 
   .training-room__play-video {
     left: 38.9%;
+  }
+
+  .training-room__image--two {
+    // width: 320px;
+    // height: 167px;
+    min-width: 320px;
+    min-height: 167px;
+
+    background-color: rgba(20,54,122,.5);
   }
 }
